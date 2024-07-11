@@ -1,3 +1,2 @@
 # clean-nodejs
-API iniciando normalmente, já possui rota funcional
-Utiliza eslint
+API iniciando normalmente, já possui rota funcional, utiliza eslint.
