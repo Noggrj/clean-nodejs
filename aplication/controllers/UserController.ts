@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import { CreateUser } from "../../domain/usecases/CreateUser";
 import { UserRepository } from "../../domain/repositories/UserRepository";
-
 export class UserController {
   constructor(
     private createUser: CreateUser,
@@ -19,3 +18,4 @@ export class UserController {
     return res.status(200).json(users);
   };
 }
+
