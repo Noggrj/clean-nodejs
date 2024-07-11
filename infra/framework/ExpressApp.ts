@@ -1,4 +1,3 @@
-// src/infrastructure/framework/ExpressApp.ts
 import express from 'express';
 import { UserController } from '../../aplication/controllers/UserController';
 import { CreateUser } from '../../domain/usecases/CreateUser';
@@ -13,4 +12,4 @@ const userController = new UserController(createUserUseCase);
 
 app.post('/users', userController.createUserHandler);
 
-export default app;
+export default app; // Adicione esta linha para exportação padrão

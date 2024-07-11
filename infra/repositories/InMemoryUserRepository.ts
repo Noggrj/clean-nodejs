@@ -1,4 +1,3 @@
-// src/infrastructure/repositories/InMemoryUserRepository.ts
 import { UserRepository } from "../../domain/repositories/UserRepository";
 import { User } from "../../domain/entities/User";
 

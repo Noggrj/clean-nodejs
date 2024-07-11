@@ -1,5 +1,4 @@
-// src/index.ts
-import app from "./infra/framework/ExpressApp";
+import app from "../infra/framework/ExpressApp";
 
 const PORT = process.env.PORT || 3000;
 
