@@ -1,15 +1,10 @@
 import express from 'express';
-import { UserController } from '../../aplication/controllers/UserController';
-import { CreateUser } from '../../domain/usecases/CreateUser';
-import { InMemoryUserRepository } from '../repositories/InMemoryUserRepository';
+import userRoutes from '../routes/userRoutes';
 
 const app = express();
 app.use(express.json());
 
-const userRepository = new InMemoryUserRepository();
-const createUserUseCase = new CreateUser(userRepository);
-const userController = new UserController(createUserUseCase);
+// Rotas de usuários
+app.use('/users', userRoutes);
 
-app.post('/users', userController.createUserHandler);
-
-export default app; // Adicione esta linha para exportação padrão
+export default app;
